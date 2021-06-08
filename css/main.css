@@ -151,15 +151,4 @@ i.icon:hover {
 		max-width: 60ch;
 		flex-flow: column wrap;
 	}
-	/* Use when it works with firefox */
-	/* 	display: block; */
-	/* 	columns: 2 auto; */
-	/* } */
-
-	/* main > section.section { */
-	/* 	break-inside: avoid; */
-	/* 	page-break-inside: avoid; */
-	/* 	-webkit-break-inside: avoid; */
-	/* 	-webkit-column-break-inside: avoid; */
-	/* } */
 }
