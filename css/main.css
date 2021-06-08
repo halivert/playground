@@ -124,6 +124,11 @@ i {
 	color: var(--violet-400);
 }
 
+.icons {
+	display: flex;
+	gap: 0.25em;
+}
+
 i.icon:hover {
 	animation: 1s spin cubic-bezier(1, 0, 0, 1);
 }
@@ -131,6 +136,8 @@ i.icon:hover {
 @keyframes spin {
 	to {
 		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
 	}
 }
 
@@ -142,5 +149,17 @@ i.icon:hover {
 	main {
 		justify-self: center;
 		max-width: 60ch;
+		flex-flow: column wrap;
 	}
+	/* Use when it works with firefox */
+	/* 	display: block; */
+	/* 	columns: 2 auto; */
+	/* } */
+
+	/* main > section.section { */
+	/* 	break-inside: avoid; */
+	/* 	page-break-inside: avoid; */
+	/* 	-webkit-break-inside: avoid; */
+	/* 	-webkit-column-break-inside: avoid; */
+	/* } */
 }
